@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Expresso.MainPage">
+
+    
+
+    <StackLayout>
+
+        <Label Text="Kunden Code" FontSize="Medium"/>
+        <Label Text="Kunden Name" FontSize="Medium"/>
+    </StackLayout>
+
+    <Grid RowSpacing="0" ColumnSpacing="0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="0.5*"/>
+        </Grid.ColumnDefinitions>
+
+        <BoxView Grid.Row="0" Grid.Column="0" BackgroundColor="Red"/>
+        <BoxView Grid.Row="0" Grid.Column="1" BackgroundColor="Blue"/>
+        <BoxView Grid.Row="1" Grid.Column="0" BackgroundColor="Yellow"/>
+        <BoxView Grid.Row="1" Grid.Column="1" BackgroundColor="Green"/>
+    </Grid>
+
+
+
+    <StackLayout>
+        <Button Text="Bestellung" x:Name="BtnNav" Clicked="BtnNavigation_Clicked"></Button>
+    </StackLayout>
+
+</ContentPage>
